@@ -3,7 +3,7 @@
 # https://github.com/jamieduk/LinuxSpaceSaver
 #
 #
-# ./linuxspacesaver.sh
+# sudo ./linuxspacesaver.sh 
 #
 echo "Linux Space Saver (c)J~Net 2024"
 echo ""
