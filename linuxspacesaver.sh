@@ -6,6 +6,7 @@
 # ./linuxspacesaver.sh
 #
 echo "Linux Space Saver (c)J~Net 2024"
+echo ""
 # Function to remove unused packages
 remove_unused_packages() {
     echo "Removing unused packages..."
@@ -123,5 +124,4 @@ for task in $tasks; do
         *) echo "Invalid selection: $task";;
     esac
 done
-
 
