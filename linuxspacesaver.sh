@@ -3,7 +3,13 @@
 # https://github.com/jamieduk/LinuxSpaceSaver
 #
 #
-# sudo ./linuxspacesaver.sh 
+# ./linuxspacesaver.sh
+#
+# Check if script is run as root
+if [ "$EUID" -ne 0 ]; then
+    echo "Please run this script with sudo."
+    exit
+fi
 #
 echo "Linux Space Saver (c)J~Net 2024"
 echo ""
@@ -124,4 +130,5 @@ for task in $tasks; do
         *) echo "Invalid selection: $task";;
     esac
 done
+
 
